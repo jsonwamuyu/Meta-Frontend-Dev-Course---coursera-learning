@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Lemon</title>
+  </head>
+  <body>
+    <main>
+      <h1>Our Menu</h1>
+      <div>
+        <h2>Queen Cakes</h2>
+        <p>Flour and honey</p>
+      </div>
+      <div>
+        <h2>Chocolate Cakes</h2>
+        <p>Chocolate and sugar</p>
+      </div>
+      <div>
+        <a href="location.html">Our Location</a>
+      </div>
+      <div>
+        <table>
+          <thead style="display: flex; flex-direction: column; gap: 20px">
+            <tr style="display: flex; flex-direction: row; gap: 32px">
+              <th>ITEM</th>
+              <th>DESCRIPTION</th>
+              <th>PRICE</th>
+            </tr>
+            <tr style="display: flex; flex-direction: row; gap: 32px">
+              <td>Queen Cakes</td>
+              <td>Flour and honey</td>
+              <td>$5.00</td>
+            </tr>
+          </thead>
+        </table>
+        <table>
+          <thead style="background-color: aqua">
+            <tr style="margin-right: 8px">
+              <td>ITEM</td>
+              <td>PRICE</td>
+              <td>DESCRIPTION</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Minced Meat</td>
+              <td>$8.00</td>
+              <td>Ground beef and spices</td>
+            </tr>
+            <tr>
+              <td>Veggie Delight</td>
+              <td>$7.00</td>
+              <td>Mixed vegetables and herbs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top: 1rem">
+        <form
+          action="/login"
+          method="post"
+          style="display: flex; flex-direction: column; gap: 0.875rem"
+        >
+          <div style="display: flex; flex-direction: column; gap: 4px">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              style="
+                border: 1px solid #ccc;
+                padding: 10px;
+                outline: none;
+                border-radius: 4px;
+              "
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              margin-top: 1rem;
+            "
+          >
+            <label for="password">Password</label>
+            <input
+              type="password"
+              style="
+                border: 1px solid #ccc;
+                padding: 10px;
+                outline: none;
+                border-radius: 4px;
+              "
+            />
+          </div>
+          <div>
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <input
+            type="submit"
+            style="
+              background-color: green;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            "
+          />
+          <div>
+            <p>1. Choose as many fruits as you can</p>
+            <div>
+              <input type="checkbox" name="Apple" id="apple" />
+              <label for="apple">Apple</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Water Mellon" id="Water-mellon" />
+              <label for="mando">Mango</label>
+            </div>
+          </div>
+          <div>
+            <p>2. What is your gender</p>
+            <div>
+              <input type="radio" name="mle" id="male" />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" name="female" id="female" />
+              <label for="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" name="nospecify" id="nospecify" />
+              <label for="nospecify">No Specify</label>
+            </div>
+          </div>
+          <div>
+            <select name="Cars" id="cars">
+              
+            </select>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
