@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Assets from "./components/Assets";
 import Dashboard from "./components/Dashboard";
 import Banner from "./components/Banner";
-import ReactLoop from "./components/coursera/ReactLoop";
+import ReactLoop from "./coursera/ReactLoop";
 
 function App() {
   return (
