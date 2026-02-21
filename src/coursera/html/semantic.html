@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML semantics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: rgb(240, 240, 240);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(48, 48, 48);
+        color: rgb(224, 224, 224);
+        padding: 8px 16px;
+      "
+    >
+      <div>
+        <h2 style="font-size: 32px">Semantics</h2>
+      </div>
+      <nav>
+        <ul style="list-style: none; display: flex; gap: 16px">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h4>Summer holiday</h4>
+        <p style="font-size: smaller; color: rgb(102, 102, 102)">
+          Posted on Monday, by Jane Wilson
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

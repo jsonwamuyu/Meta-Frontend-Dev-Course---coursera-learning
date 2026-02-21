@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: rgb(240, 240, 240);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      nav {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 1024px;
+        padding: 8px 16px;
+
+        width: 100%;
+        @media (width >= 40rem /* 640px */) {
+          max-width: 40rem /* 640px */;
+        }
+        @media (width >= 48rem /* 768px */) {
+          max-width: 48rem /* 768px */;
+        }
+        @media (width >= 64rem /* 1024px */) {
+          max-width: 64rem /* 1024px */;
+        }
+      }
+      .copyright {
+        font-size: small;
+        color: rgb(95, 95, 95);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <img src="../src/assets/little-lemon.png" alt="" />
+    </header>
+    <nav class="container" style="background-color: white">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </nav>
+    <main class="container">
+      <h1>Blog</h1>
+      <article>
+        <h4>20% off this weekend</h4>
+        <p>
+          Come down to Little lemon this weekend and you will get a massive
+          discount of 20% of your first order of the day.
+        </p>
+      </article>
+      <article>
+        <h4>Our new menu</h4>
+        <p>We have updated our menu with new dishes.</p>
+      </article>
+    </main>
+    <footer class="container">
+      <p class="copyright">Copyright Little Lemon</p>
+    </footer>
+  </body>
+</html>

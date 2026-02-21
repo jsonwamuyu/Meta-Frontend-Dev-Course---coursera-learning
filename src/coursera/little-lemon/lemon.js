@@ -210,4 +210,4 @@ getDiscount(true, 60);
 
 // Submit your assignment: Click the "Submit Assignment" button in the Lab toolbar.
 
-// Your code will be autograded and feedback will be available shortly on the Grades tab.
+// Your code will be auto-graded and feedback will be available shortly on the Grades tab.
