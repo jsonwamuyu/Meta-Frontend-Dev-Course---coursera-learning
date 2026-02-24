@@ -73,6 +73,9 @@
         width: 100%;
         padding: 1rem;
       }
+      form input:focus:invalid {
+        border: 1px solid red;
+      }
       @media (min-width: 678px) {
         .signup {
           width: 50%;
@@ -119,6 +122,10 @@
               id="confirm-password"
               placeholder="Confirm Password"
             />
+          </div>
+          <div>
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="tel" id="tel" placeholder="Phone Number" />
           </div>
           <div style="width: fit-content">
             <button type="submit">Sign Up</button>
