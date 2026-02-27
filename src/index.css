@@ -84,6 +84,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  display: inline-block;
 }
 button:hover {
   border-color: #646cff;
@@ -103,5 +104,28 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 4.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.75em;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.25em;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75em;
   }
 }
