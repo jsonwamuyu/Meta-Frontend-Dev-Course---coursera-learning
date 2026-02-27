@@ -4,8 +4,8 @@ const ReactLoop = () => {
     { id: 2, name: "Mike", role: "editor", active: false },
     { id: 3, name: "Brian", role: "viewer", active: true },
     { id: 4, name: "Peter", role: "viewer", active: true },
-    { id: 4, name: "Pablo", role: "admin", active: false },
-    { id: 4, name: "Rocky", role: "viewer", active: true },
+    { id: 5, name: "Pablo", role: "admin", active: false },
+    { id: 6, name: "Rocky", role: "viewer", active: true },
   ];
   return (
     <div className="w-full my-8">
@@ -45,7 +45,8 @@ const ReactLoop = () => {
               .map((u) => (
                 <div key={u.id}>
                   <h6>
-                    {u.name} - <span className="font-light italic">{u.role}</span>
+                    {u.name} -{" "}
+                    <span className="font-light italic">{u.role}</span>
                   </h6>
                 </div>
               ))}
