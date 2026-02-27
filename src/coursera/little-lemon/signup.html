@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lato", sans-serif;
+      }
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      form div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+      }
+      form div label {
+        font-size: small;
+        color: #555;
+      }
+      form div input {
+        padding: 12px 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+      }
+      .signup {
+        width: 100%;
+        padding: 1rem;
+      }
+      form input:focus:invalid {
+        border: 1px solid red;
+      }
+      @media (min-width: 678px) {
+        .signup {
+          width: 50%;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <p>This is the main section, make it happen today and tomorrow</p>
+      <section class="signup">
+        <h1>SignUp</h1>
+        <form action="">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" />
+          </div>
+          <div>
+            <label for="email">emil</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+            />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div>
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="tel" id="tel" placeholder="Phone Number" />
+          </div>
+          <div style="width: fit-content">
+            <button type="submit">Sign Up</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2026, Copyrights Little Lemon</p>
+    </footer>
+  </body>
+</html>
