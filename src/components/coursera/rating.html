@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Video Rating</title>
+
+  <link rel="stylesheet" href="ratings.css">
+</head>
+<body>
+  <header></header>
+  <nav></nav>
+  <main>
+    <section style="display: flex; flex-direction: column;gap:4px; align-items: center;">
+      <video width="320"  height="240" muted controls>
+        <source src="video.mp4" type="video/mp4">
+          This video player not supported on your device
+        </source>
+      </video>
+
+      <div>
+        <h1>Rate this video</h1>
+      </div>
+      <form action="" method="POST">
+        <div class="form-group">
+          <label for="rating">Rating</label>
+          <input type="range" name="rating" id="rating" min="1" max="5" list="ratings" required>
+          <datalist id="ratings">
+            <option value="1" label="1"></option>
+            <option value="2" ></option>
+            <option value="3" ></option>
+            <option value="4" ></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </div>
+        <div class="form-group"></div>
+        <button type="submit">Submit Ratings</button>
+      </form>
+    </section>
+    <section>
+        <figure> 
+            <img src="photo.png" width="320" alt="My Profile Photo"> 
+            <figcaption>A photo of myself on a beach in 2015</figcaption> 
+         </figure>
+    </section>
+    <section>
+        <iframe src="https://www.example.com" frameborder="0" width="400" allow="camera 'none'; microphone 'none';" sandbox="allow-forms" loading="lazy" title=""></iframe>
+    </section>
+    <section>
+        <iframe src="placeholder.png" frameborder="0" sandbox width="320" height="128" loading="lazy" allow="camera 'none'; microphone 'none'; payment 'none';"></iframe>
+    </section>
+  </main>
+  <footer>
+    &copy;2026 Copyrights Little Lemon
+  </footer>
+</body>
+
+</html>
