@@ -2,7 +2,7 @@
 import LoginLogoutButton from "./LoginLogoutButton";
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // const userName = useContext(UserContext);
@@ -22,7 +22,24 @@ const Navbar = () => {
             <span className="text-blue-500">P</span>
           </h2>
         </div>
-        <nav className="my-4 md:my-0">
+        <nav>
+          <li
+            className="inline-block
+          list-none"
+          >
+            <a href="/">Home</a>
+          </li>
+          <li className="list-none mr-4 inline-block">
+            <a href="/about">About Us</a>
+          </li>
+          <li className="list-none mr-4 inline-block">
+            <a href="/assets">Assets</a>
+          </li>
+          <li className="list-none inline-block mr-4">
+            <a href="/contact">Contact Us</a>
+          </li>
+        </nav>
+        {/* <nav className="my-4 md:my-0">
           <Link to="/" className="inline-block mr-4">
             Home
           </Link>
@@ -44,7 +61,7 @@ const Navbar = () => {
           <Link to="/contact" className="inline-block mr-4">
             Contact Us
           </Link>
-        </nav>
+        </nav> */}
         <div>
           <LoginLogoutButton
             isLoggedIn={isLoggedIn}
