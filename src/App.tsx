@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -12,6 +12,9 @@ import UserContext from "./context/UserContext";
 // import MealList from "../src/components/MealList";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import SignUp from "./components/coursera/react-practice/SignUp";
+import NotFound from "./components/NotFound";
+
 function App() {
   const [userName, setUserName] = useState(null);
 
@@ -27,14 +30,16 @@ function App() {
     <UserContext.Provider value={userName}>
       <Banner message="Welcome to the Learning Management Platform" />
       <Navbar />
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/assets" element={<Assets />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </UserContext.Provider>
   );
 }
