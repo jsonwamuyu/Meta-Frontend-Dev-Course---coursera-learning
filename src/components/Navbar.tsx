@@ -1,9 +1,7 @@
-// import { useContext } from "react";
 import { Link } from "react-router-dom";
 import LoginLogoutButton from "./LoginLogoutButton";
 
 import { useState } from "react";
-// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // const userName = useContext(UserContext);
@@ -46,9 +44,6 @@ const Navbar = () => {
             isLoggedIn={isLoggedIn}
             handleLoginLogout={handleLoginLogout}
           />
-          {/* <button className="bg-blue-500 text-white px-4 py-2 rounded">
-            Login
-          </button> */}
         </div>
       </div>
     </div>
