@@ -2,31 +2,6 @@
 
 @import "tailwindcss";
 
-nav {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 768px) {
-  nav {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-
-@layer base {
-  .container {
-    @apply max-w-7xl mx-auto px-8;
-  }
-  p {
-    @apply text-sm text-gray-300;
-  }
-}
-
 :root {
   font-family:
     "Manrope",
@@ -130,5 +105,36 @@ button:focus-visible {
 @media (max-width: 480px) {
   h1 {
     font-size: 1.75em;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@layer base {
+  .container {
+    @apply max-w-7xl mx-auto px-8;
+  }
+  p {
+    @apply text-sm text-gray-300;
+  }
+  h5 {
+    @apply font-semibold text-2xl my-2;
+  }
+  li {
+    @apply list-none;
   }
 }

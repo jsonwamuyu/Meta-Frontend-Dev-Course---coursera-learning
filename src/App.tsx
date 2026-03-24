@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import SignUp from "./components/coursera/react-practice/SignUp";
 import NotFound from "./components/NotFound";
 import { AuthContext } from "./components/coursera/react-practice/context/AuthContext";
+import AdvancedReact from "./components/coursera/advanced-react/AdvancedReact";
 
 function App() {
   const [user, setUser] = useState({
@@ -39,6 +40,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/advanced-react" element={<AdvancedReact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AuthContext.Provider>

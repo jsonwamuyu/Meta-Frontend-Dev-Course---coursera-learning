@@ -29,6 +29,10 @@ const Navbar = () => {
           <Link to="/assets" className="inline-block mr-4">
             Assets
           </Link>
+
+          <Link to="/advanced-react" className="inline-block mr-4">
+            Advanced React
+          </Link>
           <Link to="/about" className="inline-block mr-4">
             About Us
           </Link>
