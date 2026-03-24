@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid system</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        /* margin: 0.25rem; */
+        padding: 0.5rem;
+        background-color: dodgerblue;
+        color: white;
+        font: 600;
+        border-radius: 0.25rem;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        /* grid-template-columns: repeat(4, 320px); */
+        /* grid-template-columns: 100px 100px 100px 200px; */
+        /* grid-template-rows: 2fr 1fr 4fr; */
+        grid-auto-rows: minmax(16rem, auto);
+        gap: 0.5rem;
+      }
+
+      @media (max-width: 43.625rem) {
+        .container {
+          grid-template-columns: 100%;
+        }
+      }
+      @media (max-width: 60rem) {
+        .container {
+          grid-template-columns: repeat(2, 300px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">This is box A</div>
+      <div class="box">This is box B</div>
+      <div class="box">This is box C</div>
+      <div class="box">This is box D</div>
+      <div class="box">This is box E</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+      <div class="box">This is box F</div>
+    </div>
+  </body>
+</html>
