@@ -1,3 +1,5 @@
+import ControlledUncontrolledComponents from "./ControlledUncontrolledComponents";
+import FeedbackForm from "./FeedbackForm";
 import TransformList from "./TransformList";
 
 const AdvancedReact = () => {
@@ -6,7 +8,12 @@ const AdvancedReact = () => {
       <div>
         <h3>Advanced React</h3>
       </div>
-      <TransformList />
+      <div className="flex gap-8">
+        <TransformList />
+        <ControlledUncontrolledComponents/>
+        <FeedbackForm />
+      </div>
+      
     </section>
   );
 };

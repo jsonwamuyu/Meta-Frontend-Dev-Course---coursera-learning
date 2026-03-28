@@ -1,4 +1,4 @@
-import { TopDish, PopularDish } from "./popular-dish";
+import { PopularDish } from "./popular-dish";
 
 const TransformList = () => {
   // Transform the list items

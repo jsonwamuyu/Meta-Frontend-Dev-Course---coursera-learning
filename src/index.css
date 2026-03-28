@@ -137,4 +137,16 @@ nav {
   li {
     @apply list-none;
   }
+  .form-group {
+    @apply flex flex-col gap-0.5;
+  }
+  .form-group input {
+    @apply p-3 outline-none border border-[1px] rounded-sm w-full;
+  }
+  label {
+    @apply text-sm;
+  }
+  .form-items {
+    @apply flex gap-8 flex-col;
+  }
 }
