@@ -1,5 +1,6 @@
 import ControlledUncontrolledComponents from "./ControlledUncontrolledComponents";
 import FeedbackForm from "./FeedbackForm";
+import Home from "./little-lemon/contextapi/Home";
 import TransformList from "./TransformList";
 
 const AdvancedReact = () => {
@@ -10,10 +11,10 @@ const AdvancedReact = () => {
       </div>
       <div className="flex gap-8">
         <TransformList />
-        <ControlledUncontrolledComponents/>
+        <ControlledUncontrolledComponents />
         <FeedbackForm />
       </div>
-      
+      <Home />
     </section>
   );
 };
