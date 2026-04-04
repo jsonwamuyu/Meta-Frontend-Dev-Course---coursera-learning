@@ -1,6 +1,7 @@
 import ControlledUncontrolledComponents from "./ControlledUncontrolledComponents";
 import FeedbackForm from "./FeedbackForm";
 import Home from "./little-lemon/contextapi/Home";
+import SignUpForm from "./little-lemon/formik/SignUpForm";
 import TransformList from "./TransformList";
 
 const AdvancedReact = () => {
@@ -15,6 +16,7 @@ const AdvancedReact = () => {
         <FeedbackForm />
       </div>
       <Home />
+      <SignUpForm/>
     </section>
   );
 };
