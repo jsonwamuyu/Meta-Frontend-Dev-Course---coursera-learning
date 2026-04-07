@@ -1,10 +1,12 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
 const Contact = () => {
+  //MOUNTING - when the component first render
+
   return (
     <section className="w-full text-sm py-4">
       <div className="container">
-        <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+        <h1>Contact Us</h1>
         <p className="text-lg">
           For inquiries, please email us at{" "}
           <a
@@ -14,9 +16,39 @@ const Contact = () => {
             info@company.com
           </a>
         </p>
+        <div className="my-24">
+          <h5>React useEffect hook</h5>
+          <p>On component MOUNTING or UPDATING or UNMOUNTING</p>
+          <Counter />
+        </div>
       </div>
     </section>
   );
 };
 
 export default Contact;
+
+function Counter() {
+  const [counter, setCounter] = useState(0);
+
+  // Runs every time counter state changes
+  useEffect(() => {
+    console.log(`Counter: ${counter}`);
+  }, [counter]);
+
+  // Runs once when the component get mounted
+  useEffect(() => {
+    console.log("Runs ONCE when the component MOUNT");
+  }, []);
+
+  // No dependency list - runs every time the component re-renders for whichever reason.
+  useEffect(() => {
+    console.log("ALWAY RUNNING");
+  });
+
+  return (
+    <button onClick={() => setCounter((prevCounter) => prevCounter + 1)}>
+      {counter}
+    </button>
+  );
+}

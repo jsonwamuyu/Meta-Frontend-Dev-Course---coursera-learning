@@ -1,4 +1,4 @@
-const ListOfGoals = (props) => {
+const ListOfGoals = (props: { allGoals: any[] }) => {
   return (
     <section>
       <h2 className="text-2xl font-bold mb-4">Your Goals</h2>
