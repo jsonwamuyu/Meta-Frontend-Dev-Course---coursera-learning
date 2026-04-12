@@ -34,6 +34,11 @@ function Counter() {
   // Runs every time counter state changes
   useEffect(() => {
     console.log(`Counter: ${counter}`);
+
+    // Runs when component unmount
+    return () => {
+      console.log("Component unmounted");
+    };
   }, [counter]);
 
   // Runs once when the component get mounted
@@ -42,9 +47,9 @@ function Counter() {
   }, []);
 
   // No dependency list - runs every time the component re-renders for whichever reason.
-  useEffect(() => {
-    console.log("ALWAY RUNNING");
-  });
+  // useEffect(() => {
+  //   console.log("ALWAYS RUNNING");
+  // });
 
   return (
     <button onClick={() => setCounter((prevCounter) => prevCounter + 1)}>

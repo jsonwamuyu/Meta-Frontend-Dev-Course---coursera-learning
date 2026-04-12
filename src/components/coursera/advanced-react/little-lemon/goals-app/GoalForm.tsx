@@ -12,7 +12,7 @@ const GoalForm = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     props.addGoal(formData);
-    alert("form Submitted");
+    // alert("form Submitted");
     setFormData({ goal: "", by: "" });
   };
 
