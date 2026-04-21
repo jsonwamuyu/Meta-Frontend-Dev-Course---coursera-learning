@@ -13,6 +13,7 @@ import SignUp from "./components/coursera/react-practice/SignUp";
 import NotFound from "./components/NotFound";
 import { AuthContext } from "./components/coursera/react-practice/context/AuthContext";
 import AdvancedReact from "./components/coursera/advanced-react/AdvancedReact";
+import LittleLemon from "./components/coursera/advanced-react/little-lemon/LittleLemon";
 
 function App() {
   const [user, setUser] = useState({
@@ -37,6 +38,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/assets" element={<Assets />} />
+            <Route path="/little-lemon" element={<LittleLemon />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/signup" element={<SignUp />} />

@@ -26,6 +26,9 @@ const Navbar = () => {
           <Link to="/" className="inline-block mr-4">
             Home
           </Link>
+          <Link to="/little-lemon" className="inline-block mr-4">
+            Little Lemon
+          </Link>
           <Link to="/assets" className="inline-block mr-4">
             Assets
           </Link>

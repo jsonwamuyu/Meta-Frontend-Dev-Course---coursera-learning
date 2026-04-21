@@ -2,7 +2,8 @@ import { useState } from "react";
 import { AuthContext } from "./coursera/react-practice/context/AuthContext";
 import LoggedInUser from "./coursera/react-practice/LoggedInUser";
 import ThemeContext from "./coursera/advanced-react/theme-context/ThemeContext";
-import WelcomeMessage from "./coursera/advanced-react/theme-context/useEffect/WelcomeMessage";
+import WelcomeMessage from "./coursera/advanced-react/little-lemon/hooks/useEffect/WelcomeMessage";
+import FetchUsers from "./coursera/advanced-react/little-lemon/hooks/useEffect/FetchUsers";
 
 const Assets = () => {
   // const { user } = useContext(AuthContext);
@@ -35,6 +36,10 @@ const Assets = () => {
             <WelcomeMessage />
           </div>
 
+          <div>
+            <h4>Fetch user using useEffect hook</h4>
+            <FetchUsers />
+          </div>
           <div>
             <h3>Updating state object(User details)</h3>
             <p>We use the spread operator to update the state object.</p>
