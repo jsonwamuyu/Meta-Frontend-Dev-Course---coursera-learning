@@ -1,5 +1,3 @@
-import React from "react";
-
 const Button = ({ type, children, ...btnProps }) => {
   const className = type === "primary" ? "btn-primary" : "btn-secondary";
   return (
@@ -17,7 +15,7 @@ const LoginButton = ({ type, children, ...btnProps }) => {
   );
 };
 
-const SpreadAtrributes = () => {
+const SpreadAttributes = () => {
   return (
     <div>
       <h5>Spread Attribute</h5>
@@ -29,4 +27,4 @@ const SpreadAtrributes = () => {
   );
 };
 
-export default SpreadAtrributes;
+export default SpreadAttributes;
