@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/main.css" />
   </head>
   <body>
-    <header class="w-full" style="">
+    <header class="w-full">
       <div class="container header-container">
         <a href="index.html">
           <img
@@ -21,9 +21,10 @@
         <nav class="">
           <ul class="">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="index.html" class="nav-link">Services</a></li>
-            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-            <li><a href="index.html" class="nav-link">Book Appointment</a></li>
+            <li><a href="index.html#services" class="nav-link">Services</a></li>
+            <li><a href="index.html#about-us" class="nav-link">About Us</a></li>
+            <li><a href="index.html#book-appointment" class="nav-link">Book Appointment</a></li>
+            <li><a href="index.html#contact-us" class="nav-link">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -31,15 +32,20 @@
 
     <main class="w-full">
       <div class="container main-container">
-        <div class="tag">
-          <h3>Our Services</h3>
-          <p class="highlight">
-            Get the best edgy hair colors and on-trend cuts in a warm and
-            relaxing atmosphere
-          </p>
-        </div>
-        <div class="services">
-          <div class="service">
+       <div class="hero"></div>
+
+        <div  id="services">
+
+          <div class="tag">
+            <h3>Our Services</h3>
+            <p class="highlight">
+              Get the best edgy hair colors and on-trend cuts in a warm and
+              relaxing atmosphere
+            </p>
+          </div>
+          
+          <div class="services">
+            <div class="service">
             <h5>Hair Cuts</h5>
             <p>
               We offer world-class and trending hair cuts services at a pocket
@@ -60,7 +66,54 @@
               friendly prices.
             </p>
           </div>
+          </div>
+          
         </div>
+
+        <div class="about-us" id="about-us">
+          <div class="tag">
+          <h3>About Us</h3>
+          </div>
+        </div>
+
+        <div class="book-appointment" id="book-appointment">
+          <div class="tag">
+            <h3>Book an Appointment</h3>
+            <p>We can only accommodate a small number of coloring appointments each week, so you need to book your spot in advance.</p>
+          </div>
+        </div>
+
+        <div class="tuitorials">
+          <div class="tag">
+            <h3>Makeup and Nail Tutorials</h3>
+            <p>Take a look on our nail and makeup experts as they put a smile on the face of our clients.</p>
+          </div>
+        </div>
+
+        <div class="contact-us" id="contact-us">
+          <div class="tag">
+            <h3>Contact Us</h3>
+            <p>We love feedbacks from our esteemed customers</p>
+          </div>
+          <form action="">
+            <div class="form-group">
+              <label for="fullname">Fullname</label>
+              <input type="text" id="fullname" name="fullname">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+            <div>
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </main>
 <footer class="w-full footer-container">
