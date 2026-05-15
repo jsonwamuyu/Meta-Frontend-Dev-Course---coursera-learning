@@ -160,7 +160,7 @@ p {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("images/hero.jpg");
+  background-image: url("./images/salon2.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 5rem;
@@ -169,7 +169,7 @@ p {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.50);
 }
 
 .hero-content {
