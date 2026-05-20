@@ -58,15 +58,47 @@ const PointMouseLogger = ({ position }) => {
 const PanelMouseLoggerWithMousePosition = withMousePosition(PanelMouseLogger);
 const PointMouseLoggerWithMousePosition = withMousePosition(PointMouseLogger);
 
-const HigherOderComponent = () => {
+const withUsername = (WrappedComponent) => {
+  return (props) => {
+    const [username, setUsername] = useState("");
+
+    useEffect(() => {
+      setUsername("Mike");
+    }, []);
+    return <WrappedComponent {...props} username={username} />;
+  };
+};
+
+const WelcomeUser = ({ username }) => {
+  if (!username) {
+    return null;
+  }
   return (
     <section>
-      <h4>Higher-Order Component</h4>
       <p>
-        A function that takes a component and returns a new component with
-        additional props or behavior.
+        Welcome back, <span className="uppercase">{username}</span>
       </p>
+    </section>
+  );
+};
+
+const WelcomeUserWithHOC = withUsername(WelcomeUser);
+
+const HigherOderComponent = () => {
+  return (
+    <section className="flex gap-8 flex-col">
       <div>
+        <h4>Higher-Order Component</h4>
+        <p>
+          A function that takes a component and returns a new component with
+          additional props or behavior.
+        </p>
+      </div>
+      <WelcomeUserWithHOC />
+      <div>
+        <p>Mouse point logger without the enhanced HOC functionality</p>
+        <PointMouseLogger position={{ x: 2, y: 3 }} />
+
         <PanelMouseLoggerWithMousePosition />
         <PointMouseLoggerWithMousePosition />
       </div>
