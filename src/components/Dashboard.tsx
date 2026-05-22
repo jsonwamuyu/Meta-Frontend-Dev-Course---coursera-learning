@@ -18,22 +18,31 @@
 
 // export default Dashboard;
 
-import { useContext } from "react";
-import UserContext from "../context/UserContext"; // ✅ Missing line
+// import { useContext } from "react";
+// import UserContext from "../context/UserContext";
 import UserProfile from "./UserProfile";
+import Component from "./coursera/react-practice/Component";
+import Login from "./coursera/react-practice/Login";
 
 const profile = "../src/assets/profile.png";
 
 const Dashboard = () => {
-  const userName = useContext(UserContext);
+  // const userName = useContext(UserContext);
+  const userName = "JOHNSON";
 
   return (
-    <div className="w-full text-sm py-4">
+    <section className="w-full text-sm py-4">
       <div className="container">
-        Welcome, <span className="font-bold">{userName}</span>
+        <div>
+          <p className="py-4">
+            Welcome, <span className="font-bold">{userName}</span>
+          </p>
+        </div>
+        <Component />
+        <UserProfile username="Mike" role="Admin" profile_picture={profile} />
+        <Login />
       </div>
-      <UserProfile username="Mike" role="Admin" profile_picture={profile} />
-    </div>
+    </section>
   );
 };
 

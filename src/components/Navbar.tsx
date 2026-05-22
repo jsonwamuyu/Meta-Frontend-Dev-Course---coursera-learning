@@ -1,44 +1,56 @@
-// import { useContext } from "react";
+import { Link } from "react-router-dom";
+import LoginLogoutButton from "./LoginLogoutButton";
+
+import { useState } from "react";
 
 const Navbar = () => {
   // const userName = useContext(UserContext);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleLoginLogout = () => {
+    setIsLoggedIn(!isLoggedIn);
+  };
+
   return (
     <div className="w-full bg-gray-800 text-white py-2">
       <div className="container flex flex-col md:flex-row justify-between items-center">
-        <div>
+        <Link to="/">
           <h2 className="text-4xl font-extrabold">
             <span className="text-green-500">L</span>
             <span className="white">M</span>
             <span className="text-blue-500">P</span>
           </h2>
-        </div>
-        <nav>
-          <li className="inline-block mr-4">
-            <a href="" className="">
-              Home
-            </a>
-          </li>
-          <li className="inline-block mr-4">
-            <a href="" className="">
-              Assets
-            </a>
-          </li>
-          <li className="inline-block mr-4">
-            <a href="" className="">
-              About
-            </a>
-          </li>
-          <li className="inline-block mr-4">
-            <a href="" className="">
-              Contact
-            </a>
-          </li>
+        </Link>
+
+        <nav className="my-4 md:my-0">
+          <Link to="/" className="inline-block mr-4">
+            Home
+          </Link>
+          <Link to="/little-lemon" className="inline-block mr-4">
+            Little Lemon
+          </Link>
+          <Link to="/assets" className="inline-block mr-4">
+            Assets
+          </Link>
+
+          <Link to="/advanced-react" className="inline-block mr-4">
+            Advanced React
+          </Link>
+          <Link to="/about" className="inline-block mr-4">
+            About Us
+          </Link>
+          <Link to="/contact" className="inline-block mr-4">
+            Contact Us
+          </Link>
+          <Link to="/signup" className="inline-block mr-4">
+            Sign up
+          </Link>
         </nav>
         <div>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded">
-            Login
-          </button>
+          <LoginLogoutButton
+            isLoggedIn={isLoggedIn}
+            handleLoginLogout={handleLoginLogout}
+          />
         </div>
       </div>
     </div>

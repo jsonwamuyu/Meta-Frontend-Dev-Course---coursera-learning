@@ -1,11 +1,66 @@
+import { useState } from "react";
+import { AuthContext } from "./coursera/react-practice/context/AuthContext";
+import LoggedInUser from "./coursera/react-practice/LoggedInUser";
+import ThemeContext from "./coursera/advanced-react/theme-context/ThemeContext";
+import WelcomeMessage from "./coursera/advanced-react/little-lemon/hooks/useEffect/WelcomeMessage";
+import FetchUsers from "./coursera/advanced-react/little-lemon/hooks/useEffect/FetchUsers";
+
 const Assets = () => {
+  // const { user } = useContext(AuthContext);
+  // console.log("User context" + user.username);
+  const [user, setUser] = useState("Mike");
+
+  const [client, setClient] = useState({
+    name: "John Doe",
+    gender: "Male",
+    email: "doejohn@gmail.com",
+  });
+
+  const updateEmail = () => {
+    setClient((prevEmail) => {
+      return {
+        ...prevEmail,
+        email: "doejane34@gmail.com",
+        gender: "Female",
+        name: "Jane Doe",
+      };
+    });
+  };
+
   return (
-    <div className="w-full bg-white/50">
-      <div className="container">
-        <h1 className="font-extrabold text-7xl">Available Assets</h1>
-        <p>This is a list of all available assets in the system.</p>
+    <AuthContext.Provider value={user}>
+      <div className="w-full">
+        <div className="container gap-16 flex flex-col my-8">
+          <div className="flex flex-row gap-8 justify-between">
+            <ThemeContext />
+            <WelcomeMessage />
+          </div>
+
+          <div>
+            <h4>Fetch user using useEffect hook</h4>
+            <FetchUsers />
+          </div>
+          <div>
+            <h3>Updating state object(User details)</h3>
+            <p>We use the spread operator to update the state object.</p>
+            <div>
+              <h5>{client.name}</h5>
+              <p className="pb-4">{client.email}</p>
+              <p className="pb-4">{client.gender}</p>
+              <button onClick={updateEmail}>Update client email</button>
+            </div>
+          </div>
+
+          <div>
+            <h1 className="font-bold text-5xl">Available Assets</h1>
+            <p>This is a list of all available assets in the system.</p>
+            <p>PAssed in user value is: {user}</p>
+          </div>
+
+          <LoggedInUser />
+        </div>
       </div>
-    </div>
+    </AuthContext.Provider>
   );
 };
 

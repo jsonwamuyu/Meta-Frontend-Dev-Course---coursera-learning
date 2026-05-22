@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hair Day | Boutique Salon in Madison</title>
+
+    <meta
+      name="description"
+      content="Hair Day is a boutique salon in Madison, Wisconsin specializing in edgy hair coloring, modern cuts, makeup, nail services, and luxury styling experiences."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="#" class="logo-wrapper">
+          <img
+            src="./assets/images/logos/logo.png"
+            alt="Hair Day Salon Logo"
+            class="logo"
+          />
+        </a>
+
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="Home.html">Explore More</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <p class="eyebrow">Madison's Modern Boutique Salon</p>
+
+          <h1>
+            Edgy Color.<br />
+            Modern Cuts.<br />
+            Luxury Experience.
+          </h1>
+
+          <p class="hero-description">
+            Hair Day specializes in trend-driven hair artistry, custom coloring,
+            styling, makeup, and nail services in a warm, relaxing environment.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary"> Book Appointment </a>
+            <a href="#services" class="btn btn-secondary"> Explore Services </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container section-column">
+          <div class="section-heading">
+            <p class="section-label">Services</p>
+            <h2>Designed Around Your Style</h2>
+            <p>
+              We combine precision, creativity, and luxury service to deliver
+              personalized beauty experiences.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <img
+                src="./assets/images/hair cut.jpg"
+                alt="Professional haircut styling"
+              />
+
+              <div class="service-content">
+                <h3>Precision Hair Cuts</h3>
+
+                <p>
+                  Modern cuts tailored to your face shape, hair texture, and
+                  lifestyle.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="./assets/images/hair coloring.jpg"
+                alt="Custom vivid hair coloring"
+              />
+              <div class="service-content">
+                <h3>Custom Hair Coloring</h3>
+
+                <p>
+                  Signature balayage, vivid tones, highlights, and edgy custom
+                  coloring.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="./assets/images/hair styling.jpg"
+                alt="Professional hair styling"
+              />
+
+              <div class="service-content">
+                <h3>Styling & Finish</h3>
+
+                <p>
+                  Event styling, luxury blowouts, and polished finishing
+                  services.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section section-dark" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="section-label">About Hair Day</p>
+
+            <h2>Creative Talent Meets Luxury Care</h2>
+
+            <p class="about-text">
+              Founded by Pria and Garry, Hair Day was built around one idea:
+              beauty appointments should feel like an experience, not an errand.
+            </p>
+
+            <p class="about-text">
+              Our boutique team specializes in edgy coloring, trend-forward
+              cuts, makeup artistry, and premium client care.
+            </p>
+          </div>
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                src="./assets/images/pria.jpeg"
+                alt="Pria - Hair Day founder and color specialist"
+              />
+
+              <h3>Pria</h3>
+              <p>Founder & Creative Color Specialist</p>
+            </article>
+
+            <article class="team-card">
+              <img src="./assets/images/garry.jpg" alt="Garry - Hair stylist" />
+
+              <h3>Garry</h3>
+              <p>Lead Stylist & Co-Founder</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- BOOKING -->
+      <section class="section" id="booking">
+        <div class="container booking-container">
+          <div class="section-heading left-align">
+            <p class="section-label">Appointments</p>
+
+            <h2>Book Your Session</h2>
+
+            <p>
+              Our custom coloring slots are limited each week. Reserve early to
+              secure your preferred appointment.
+            </p>
+          </div>
+
+          <form class="booking-form">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Jane Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Notes</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us about your desired look..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">
+              Book Appointment
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section testimonials-section">
+        <div class="container section-column">
+          <div class="section-heading">
+            <p class="section-label">Testimonials</p>
+            <h2>What Clients Say</h2>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <p>
+                “Best color experience I’ve ever had. The atmosphere is
+                luxurious and welcoming.”
+              </p>
+
+              <h4>— Sarah M.</h4>
+            </article>
+
+            <article class="testimonial-card">
+              <p>
+                “Hair Day transformed my look completely. The attention to
+                detail is unmatched.”
+              </p>
+
+              <h4>— Amanda K.</h4>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                “The salon feels premium without being intimidating. Highly
+                recommended.”
+              </p>
+
+              <h4>— Jessica R.</h4>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section-dark" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-label">Contact</p>
+
+            <h2>Visit Hair Day</h2>
+
+            <div class="contact-details">
+              <p>Madison, Wisconsin</p>
+              <p>(555) 123-4567</p>
+              <p>hello@hairday.com</p>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="contact-name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="contact-email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="comment">Message</label>
+              <textarea id="comment" name="comment" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Hair Day © 2026. All rights reserved.</p>
+
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

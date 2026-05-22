@@ -1,32 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @import "tailwindcss";
 
-nav {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 768px) {
-  nav {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-
-@layer base {
-  .container {
-    @apply max-w-7xl mx-auto;
-  }
-}
-
 :root {
   font-family:
-    "DM Sans",
+    "Manrope",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -75,13 +53,13 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #646cff;
   cursor: pointer;
   transition: border-color 0.25s;
   display: inline-block;
@@ -127,5 +105,71 @@ button:focus-visible {
 @media (max-width: 480px) {
   h1 {
     font-size: 1.75em;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@layer base {
+  .container {
+    @apply max-w-7xl mx-auto px-8;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mb-4 mt-2;
+  }
+  h2 {
+    @apply text-5xl font-bold;
+  }
+  h3 {
+    @apply text-4xl font-bold;
+  }
+  h4 {
+    @apply text-3xl font-semibold;
+  }
+  h5 {
+    @apply text-2xl font-semibold;
+  }
+  h6 {
+    @apply text-xl font-semibold;
+  }
+  p {
+    @apply text-sm text-gray-300;
+  }
+  h5 {
+    @apply font-semibold text-2xl my-2;
+  }
+  li {
+    @apply list-none;
+  }
+  .form-group {
+    @apply flex flex-col gap-0.5 mb-4;
+  }
+  .form-group input {
+    @apply p-3 outline-none border border-[1px] rounded-sm w-full;
+  }
+  label {
+    @apply text-sm;
+  }
+  .form-items {
+    @apply flex gap-8 flex-col;
   }
 }
