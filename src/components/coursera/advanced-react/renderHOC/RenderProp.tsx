@@ -74,5 +74,6 @@ function App() {
     </div>
   );
 }
+r;
 
 export default RenderProp;

@@ -1,9 +1,12 @@
 import restaurant from "../assets/restaurant.jpg";
 import MyVideo from "./MyVideo";
-
+import Gallery from "./coursera/advanced-react/renderHOC/Galary";
+import Profile from "./coursera/advanced-react/renderHOC/Profile";
 const About = () => {
   return (
     <section className="container">
+      <Gallery />
+      <Profile />
       <div>
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
         <p className="max-w-sm text-sm">
